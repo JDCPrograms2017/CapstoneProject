@@ -43,6 +43,7 @@ ul {
     background-color: #333;
     flex-grow: 1;
     flex-shrink: 2;
+    flex-shrink: 1;
 }
 
 li {
@@ -82,6 +83,8 @@ li a:hover {
   max-width: 100%;
   width: 750px;
   padding: 0.5rem 1.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .side-content {
@@ -92,6 +95,8 @@ li a:hover {
 .side-content h3 {
   font-size: 3rem;
   padding-left: 0.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .side-content h4 {
@@ -99,6 +104,8 @@ li a:hover {
   padding: 0 2rem;
   font-size: 1.5rem;
   font-style: italic;
+  flex-grow: 2;
+  flex-shrink: 2;
 }
 
 .side-content .button {
@@ -140,6 +147,8 @@ li a:hover {
 .left-content img {
   width: 750px;
   max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .left-content h3 {
