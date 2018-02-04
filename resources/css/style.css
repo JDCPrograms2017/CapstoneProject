@@ -42,6 +42,7 @@ ul {
     overflow: hidden;
     background-color: #333;
     flex-grow: 1;
+    flex-shrink: 2;
 }
 
 li {
@@ -54,6 +55,8 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 li a:hover {
@@ -68,22 +71,27 @@ li a:hover {
 }
 
 .flex-container {
+  width: 100%;
   display: flex;
   background-color: rgb(193, 197, 204);
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .image img {
+  max-width: 100%;
   width: 750px;
-  height: 500px;
   padding: 0.5rem 1.5rem;
 }
 
 .side-content {
   color: rgb(76, 78, 81);
+  padding-left: 1rem;
 }
 
 .side-content h3 {
   font-size: 3rem;
+  padding-left: 0.5rem;
 }
 
 .side-content h4 {
@@ -102,11 +110,17 @@ li a:hover {
   border-radius: 12px;
   transition: color 0.5s, background-color 0.5s;
   text-decoration: none;
+  flex-grow: 2;
+  flex-shrink: 2;
+  margin-left: 15px;
 }
 
 .button a {
   color: rgb(26, 27, 28);
   text-decoration: none;
+  flex-grow: 2;
+  flex-shrink: 2;
+  margin-left: 15px;
 }
 
 .side-content .button:hover {
@@ -125,6 +139,7 @@ li a:hover {
 
 .left-content img {
   width: 750px;
+  max-width: 100%;
 }
 
 .left-content h3 {
@@ -203,3 +218,34 @@ li a:hover {
   font-weight: bold;
   color: rgb(27, 177, 226);
 }
+
+.flex-container-three {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.third-container-items {
+   width: 1250px;
+   height: 700px;
+   padding-left: 6rem;
+ }
+
+ .item img {
+   height: 200px;
+   margin: 10px;
+   display: block;
+   flex-grow: 1;
+   flex-shrink: 2;
+ }
+
+ .item {
+   padding: 5px;
+   font-weight: bold;
+   flex-grow: 1;
+   flex-shrink: 1;
+ }
+
+ .item h4.desc {
+   line-height: 10%;
+ }
